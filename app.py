@@ -23,7 +23,7 @@ async def run_hallo2_api(
         img_file.write(await source_image.read())
     
     # Save the uploaded driving audio
-    audio_path = os.path.join(temp_dir, "driving.wav")
+    audio_path = os.path.join(temp_dir, "driving.mp3")
     with open(audio_path, "wb") as audio_file:
         audio_file.write(await driving_audio.read())
     
